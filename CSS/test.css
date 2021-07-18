@@ -1,0 +1,63 @@
+input#open{
+    display: none;
+}
+label{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position:absolute;
+    top: 250px;
+    left: 250px;
+    z-index: 99;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transition: .5s ease-in-out;
+    top: 250px;
+    left: 250px;
+}
+
+.btn-1{
+    background-color: beige;
+    
+}
+.btn-2{
+    background-color: rgb(105, 105, 99);
+    transition: 0.1s;
+}
+.btn-3{
+    background-color: rgb(19, 20, 61);
+    transition: 0.2s;
+}
+.btn-4{
+    background-color: rgb(153, 66, 95);
+    transition: 0.3s;
+}
+.btn-5{
+    background-color: rgb(64, 71, 55);
+    transition: 0.4s;
+}
+input#open:checked~.btn-1{
+    top: 100px;
+}
+input#open:checked~.btn-2{
+    top: 200px;
+    left: 100px;
+}
+input#open:checked~.btn-3{
+    top: 370px;
+    left: 170px;
+}
+input#open:checked~.btn-4{
+    top: 370px;
+    left: 330px;
+}
+input#open:checked~.btn-5{
+    top: 200px;
+    left: 400px;
+}
